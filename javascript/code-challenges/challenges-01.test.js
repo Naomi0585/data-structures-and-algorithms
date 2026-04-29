@@ -101,10 +101,16 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
+  arr.push(value);
   // Solution code here...
 };
 
 const addNumbers = (num, arr, times, callback) => {
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+
+  return arr;
   // Solution code here...
 };
 
