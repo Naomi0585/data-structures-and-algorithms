@@ -17,7 +17,7 @@ function addOne(arr) {
   });
 
   return result;
-  // Solution code here...
+  // Solution!!
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ const addExclamation = (arr) => {
   });
 
   return result;
-  // Solution code here...
+  // Solution!!
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ const allUpperCase = (arr) => {
   });
 
   return result;
-  // Solution code here...
+  // Solution!!
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ const speaker = (words, callback) => {
   });
 
   return result;
-  // Solution code here...
+  // Solution!!
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -102,7 +102,7 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   arr.push(value);
-  // Solution code here...
+  // Solution!!
 };
 
 const addNumbers = (num, arr, times, callback) => {
@@ -111,7 +111,7 @@ const addNumbers = (num, arr, times, callback) => {
   }
 
   return arr;
-  // Solution code here...
+  // Solution!!
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,7 +133,16 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let list = [];
+
+  availableItems.forEach(item => {
+    if (item.available) {
+      list.push(item.name);
+    }
+  });
+
+  return list;
+  // Solution!!
 };
 
 /* ------------------------------------------------------------------------------------------------
