@@ -159,9 +159,16 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
+const fizzbuzz = (arr) =>
+  arr.map(num => {
+    if (num % 3 === 0 && num % 5 === 0) return "Fizz Buzz";
+    if (num % 3 === 0) return "Fizz";
+    if (num % 5 === 0) return "Buzz";
+    return num;
+  });
+
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
