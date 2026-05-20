@@ -79,7 +79,7 @@ const forEachTwoToThe = (arr) => {
   const result = [];
 
   arr.forEach(num => {
-    result.push(Math.pow(2, num));
+    result.push(2, num);
   });
 
 
