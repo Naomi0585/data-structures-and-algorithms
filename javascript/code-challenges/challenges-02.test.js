@@ -18,7 +18,7 @@ const raisedToTheThird = (arr) => {
   return result;
 };
 
-  // Solution!!
+// Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -27,9 +27,11 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  return arr.map(num => num + 1);
+
 };
 
+// Solution!!
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -37,8 +39,11 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
-  // Solution code here...
+  return arr.map(str => str + '?');
+
 };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -51,8 +56,18 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-  // Solution code here...
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    result.push(Math.pow(2, arr[i]));
+  }
+
+  return result;
+
+
 };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -61,8 +76,17 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  const result = [];
+
+  arr.forEach(num => {
+    result.push(Math.pow(2, num));
+  });
+
+  return result;
+
 };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -71,8 +95,12 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  return arr.map(num => Math.pow(2, num));
+
+
 };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -85,8 +113,11 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  // Solution code here...
+  return arr.map(char => char.charCodeAt(0));
+
 };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
@@ -99,8 +130,18 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
 const evenOdd = (arr) => {
-  // Solution code here...
-};
+  return arr.map(item => {
+    if (typeof item !== 'number') {
+      return 'N/A';
+    } else if (item % 2 === 0) {
+      return 'even';
+    } else {
+      return 'odd';
+    }
+  });
+ };
+
+//Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
