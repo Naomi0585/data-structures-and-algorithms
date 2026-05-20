@@ -18,7 +18,7 @@ const raisedToTheThird = (arr) => {
   return result;
 };
 
-  // Solution!!
+// Solution!!
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -27,9 +27,11 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  return arr.map(num => num + 1);
+
 };
 
+// Solution!!
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
