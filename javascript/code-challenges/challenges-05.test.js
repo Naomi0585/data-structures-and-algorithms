@@ -119,9 +119,8 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  // Solution code here...
-  return houses;
+  return arr.map(person => person.house);
+
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -137,7 +136,13 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  const person = arr.find(
+    obj => obj.name === character
+  );
+
+  return Object.values(person).includes(
+    person.children
+  );
 
 };
 
