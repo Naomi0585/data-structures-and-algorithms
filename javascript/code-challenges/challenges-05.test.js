@@ -155,7 +155,15 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
+  const person = arr.find(
+    obj => obj.name === character
+  );
+
+  return Object.entries(person).some(
+    ([key, value]) =>
+      key === 'children' && value.length > 0
+  );
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -165,7 +173,8 @@ Write a function named totalCharacters that takes in an array and returns the nu
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
-  // Solution code here...
+  return arr.length;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
