@@ -30,7 +30,7 @@ Prove that the original people array is unchanged
 const addPeople = (arr) => {
   const newArr = ['Odie', ...arr, 'Garfield'];
   return newArr;
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +47,13 @@ Ensure that the original people array and stuff objects are unchanged
 ------------------------------------------------------------------------------------------------ */
 
 const setState = (arr, obj) => {
-  // Solution code here...
+  const state = {
+    people: [...arr],
+    stuff: { ...obj }
+  };
+
+  return state; 
+
 };
 
 
