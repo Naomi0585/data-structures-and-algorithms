@@ -52,7 +52,7 @@ const setState = (arr, obj) => {
     stuff: { ...obj }
   };
 
-  return state; 
+  return state;
 
 };
 
@@ -74,7 +74,18 @@ Ensure that the original people array and stuff objects are unchanged
 ------------------------------------------------------------------------------------------------ */
 
 const newState = (arr, obj) => {
-  // Solution code here...
+  const state = {
+    people: [...arr],
+    stuff: {
+      ...obj,
+      cars: [...obj.cars, 'Ford'],
+      toothbrush: 'brand new',
+      toys: obj.toys + 1
+    }
+  };
+
+  return state; 
+
 };
 
 
