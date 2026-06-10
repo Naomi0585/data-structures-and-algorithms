@@ -13,10 +13,19 @@ HINT: Look at the tests to see how the callback functions are used.
 
 ------------------------------------------------------------------------------------------------ */
 
+function upper(str) {
+  return str.toUpperCase();
+
+}
+
+function lower(str) {
+  return str.toLowerCase();
+}
+
 const updateAnimal = (arr, callback) => {
   return arr.map(callback);
-
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
