@@ -83,3 +83,43 @@ From the `data-structures-and-algorithms/javascript` folder, execute the followi
 #### Live Tests
 
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
+
+# Linked List Insertions
+
+## Challenge Description
+
+Extend a Linked List class by implementing three insertion methods: `append()`, `insertBefore()`, and `insertAfter()`.
+
+## Approach and Efficiency
+
+I used linked list traversal to locate nodes and updated their `next` pointers to insert new nodes without changing the existing node values.
+
+- **append():** Adds a node to the end of the list.
+- **insertBefore():** Inserts a node before the first matching value.
+- **insertAfter():** Inserts a node after the first matching value.
+
+**Time Complexity:** O(n) for all three methods in the worst case.
+
+**Space Complexity:** O(1) for all three methods.
+
+## Testing
+
+All six required Jest tests passed successfully, covering insertion at the beginning, middle, and end of the linked list.
+
+Summary
+
+Implemented append(), insertBefore(), and insertAfter() methods for the Linked List class.
+
+Added six Jest unit tests covering insertion at different positions.
+
+Updated challenge documentation and the repository Table of Contents.
+
+Testing
+
+All six required unit tests passed successfully using Jest.
+
+Complexity
+
+Time: O(n) worst case
+
+Space: O(1)
