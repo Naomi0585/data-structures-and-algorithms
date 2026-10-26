@@ -7,7 +7,6 @@ elements in reversed order.
  # Whiteboard Process
 
  ![Array Reverse Whiteboard](arwhiteboard.png)
-
  1. Create a new empty array called `reversed`.
 2. Start at the last element of the original array.
 3. Move backward through the original array one element at a time.
